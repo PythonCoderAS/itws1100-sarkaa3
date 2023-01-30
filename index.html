@@ -6,11 +6,35 @@
 		body {
 			font-family: sans-serif;
 		}
+		#tree li {
+			list-style-type: none;
+		}
 		</style>
 	</head>
 	<body>
-		<p>Hello world!</p>
+		<h1>Hello world!</h1>
 		<p>This is a test of the ITWS webserver for ITWS-1100.</p>
 		<p>I am Aoyan Sarkar (sarkaa3). Nice to meet you.</p>
+		<hr />
+		<h2>Structure</h2>
+		<div id="tree">
+			<ul>
+				<li><a href="./index.html">index.html</a> (you are here)</li>
+				<li><details>
+					<summary><a href="./labs">labs</a></summary>
+					<ul>
+						<li><details>
+							<summary><a href="./labs/lab2">lab2</a></summary>
+							<ul>
+								<li><a href="./labs/lab2/index.html">index.html</a></li>
+							</ul>
+						</details></li>
+						<li><details>
+							<summary><a href="./labs/lab3">lab3</a></summary>
+						</details></li>
+					</ul>
+				</details></li>
+			</ul>
+		</div>
 	</body>
 </html>
