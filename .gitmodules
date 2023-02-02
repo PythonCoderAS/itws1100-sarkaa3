@@ -1,3 +1,6 @@
 [submodule "labs/lab2"]
 	path = labs/lab2
 	url = git@github.com:RPI-ITWS/lab02-resume-PythonCoderAS
+[submodule "labs/lab3"]
+	path = labs/lab3
+	url = git@github.com:RPI-ITWS/lab03-website-PythonCoderAS.git
