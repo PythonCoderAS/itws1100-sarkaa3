@@ -4,3 +4,6 @@
 [submodule "labs/lab3"]
 	path = labs/lab3
 	url = git@github.com:RPI-ITWS/lab03-website-PythonCoderAS.git
+[submodule "labs/lab4"]
+	path = labs/lab4
+	url = git@github.com:RPI-ITWS/lab04-xmlandrss-PythonCoderAS.git
