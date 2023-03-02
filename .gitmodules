@@ -10,3 +10,6 @@
 [submodule "labs/lab5"]
 	path = labs/lab5
 	url = git@github.com:RPI-ITWS/lab05-javascript-PythonCoderAS.git
+[submodule "labs/lab6"]
+	path = labs/lab6
+	url = git@github.com:RPI-ITWS/lab06-jquery-PythonCoderAS.git
