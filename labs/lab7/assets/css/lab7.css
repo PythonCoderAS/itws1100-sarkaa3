@@ -1,0 +1,12 @@
+iframe {
+    width: 100%;
+    border: 0;
+}
+
+#persona {
+    min-height: 5em;
+}
+
+#Wireframe {
+    min-height: 35em;
+}
