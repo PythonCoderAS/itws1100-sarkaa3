@@ -138,9 +138,9 @@
 <?php
   if ($dbOk) {
 
-    $create_query = 'create table if not exists actors (actorid int primary key auto_increment, first_names varchar(100) not null, last_name varchar(100) not null, dob char(10) not null);';
+    $create_query = 'create table if not exists actors (actorid unsigned int primary key auto_increment, first_names varchar(100) not null, last_name varchar(100) not null, dob char(10) not null);';
     $db->query($create_query);
-    $create_query = 'create table if not exists movie_actors (movieid int not null, actorid int not null, PRIMARY KEY(movieid, actorid), FOREIGN KEY (movieid) REFERENCES movies(id), FOREIGN KEY (actorid) REFERENCES actors(actorid));';
+    $create_query = 'create table if not exists movie_actors (movieid unsigned int not null, actorid unsigned  int not null, PRIMARY KEY(movieid, actorid), FOREIGN KEY (movieid) REFERENCES movies(id), FOREIGN KEY (actorid) REFERENCES actors(actorid));';
     $db->query($create_query);
 
     $query = 'select * from actors order by last_name';
