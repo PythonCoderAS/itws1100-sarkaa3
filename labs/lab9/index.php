@@ -138,6 +138,9 @@
 <?php
   if ($dbOk) {
 
+    $create_query = 'create table if not exists actors (actorid int primary key auto_increment, first_names varchar(100) not null, last_name varchar(100) not null, dob char(10) not null);';
+    $db->query($create_query);
+
     $query = 'select * from actors order by last_name';
     $result = $db->query($query);
     $numRecords = $result->num_rows;
