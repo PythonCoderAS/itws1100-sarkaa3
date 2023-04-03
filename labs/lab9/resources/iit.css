@@ -126,19 +126,19 @@ th {
 td {
   padding-right: 1em;
 }
-#actorTable, #movieTable {
+#actorTable, #movieTable, #movieActorsTable {
   width: 100%;
   border-spacing: 0;
   border: 1px solid #333;
 }
-#actorTable th, #movieTable th {
+#actorTable th, #movieTable th, #movieActorsTable th {
   background-color: #ddc;
   padding: 2px 4px;
 }
-#actorTable td, #movieTable td {
+#actorTable td, #movieTable td, #movieActorsTable td {
   padding: 2px 4px;
 }
-#actorTable tr.odd td, #movieTable tr.odd td {
+#actorTable tr.odd td, #movieTable tr.odd td, #movieActorsTable tr.odd td {
   background-color: #eed;
   color: black;
 }
