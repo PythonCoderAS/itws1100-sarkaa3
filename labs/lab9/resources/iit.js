@@ -1,8 +1,8 @@
 function validate(formObj) {
   
-  if (formObj.title.value == "") {
+  if (formObj.firstNames.value == "") {
     alert("Please enter a first name");
-    formObj.title.focus();
+    formObj.firstNames.focus();
     return false;
   }
   
@@ -21,28 +21,46 @@ function validate(formObj) {
   return true;
 }
 
+function validateMovies(formObj) {
+  
+  if (formObj.title.value == "") {
+    alert("Please enter a title");
+    formObj.title.focus();
+    return false;
+  }
+  
+  
+  if (formObj.year.value == "") {
+    alert("Please enter a year");
+    formObj.year.focus();
+    return false;
+  }
+    
+  return true;
+}
 
-function moviesOnLoad() {
+
+function actorsOnLoad() {
   
   // focus the name field on first load of the page
-  $("#title").focus();
+  $("#firstNames").focus();
      
-  $(".deleteMovie").click(function() {
-    if(confirm("Remove movie? (This action cannot be undone.)")) {
+  $(".deleteActor").click(function() {
+    if(confirm("Remove actor? (This action cannot be undone.)")) {
       
       // get the id of the clicked element's row
       var curId = $(this).closest("tr").attr("id");
       // Extract the db id of the movie from the dom id of the clicked element
-      var movieId = curId.substr(curId.indexOf("-")+1);
+      var actorId = curId.substr(curId.indexOf("-")+1);
       // Build the data to send. 
-      var postData = "id=" + movieId;
+      var postData = "id=" + actorId;
       // we could also format this as json ... jQuery will (by default) 
       // convert it into a query string anyway, e.g. 
       // var postData = { "id" : movieId };
       
       $.ajax({
         type: "post",
-        url: "movie-delete.php",
+        url: "actor-delete.php",
         dataType: "json",
         data: postData,
         success: function(responseData, status){
@@ -59,10 +77,10 @@ function moviesOnLoad() {
             $(".messages").hide();
             
             // populate the js message box and show it:
-            $("#jsMessages").html("<h4>Movie deleted</h4>").show();
+            $("#jsMessages").html("<h4>Actor deleted</h4>").show();
             
             // re-zebra the table
-            $("#movieTable tr").each(function(i){
+            $("#actorTable tr").each(function(i){
               if (i % 2 == 0) {
                 // we must compensate for the header row...
                 $(this).addClass("odd"); 
@@ -146,6 +164,6 @@ $(document).ready(function () {
   if (location.href.endsWith("movies.php")){
     moviesOnLoad();
   } else {
-    moviesOnLoad()
+    actorsOnLoad()
   }
 });
