@@ -126,23 +126,23 @@ th {
 td {
   padding-right: 1em;
 }
-#actorTable {
+#actorTable, #movieTable {
   width: 100%;
   border-spacing: 0;
   border: 1px solid #333;
 }
-#actorTable th {
+#actorTable th, #movieTable th {
   background-color: #ddc;
   padding: 2px 4px;
 }
-#actorTable td {
+#actorTable td, #movieTable td {
   padding: 2px 4px;
 }
-#actorTable tr.odd td {
+#actorTable tr.odd td, #movieTable tr.odd td {
   background-color: #eed;
   color: black;
 }
-.deleteActor {
+.deleteActor, .deleteMovie {
   cursor: pointer;
 }
 .boxedContent {
