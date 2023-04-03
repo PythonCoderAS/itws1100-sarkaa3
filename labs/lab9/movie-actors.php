@@ -42,7 +42,7 @@
     $result = $db->query($query);
     $numRecords = $result->num_rows;
 
-    echo '<tr><th>Movie:</th><th>Actor:</th><th></th></tr>';
+    echo '<tr><th>Movie:</th><th>Actor:</th></tr>';
     for ($i=0; $i < $numRecords; $i++) {
       $record = $result->fetch_assoc();
       if ($i % 2 == 0) {
