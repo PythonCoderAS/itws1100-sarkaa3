@@ -1,3 +1,1 @@
-<?
-header("Location: /iit");
-?>
+<? header("Location: http://sarkaa3rpi.eastus.cloudapp.azure.com/iit"); ?>
