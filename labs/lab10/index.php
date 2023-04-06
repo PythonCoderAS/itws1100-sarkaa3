@@ -1,1 +1,1 @@
-<?php header("Location: http://sarkaa3rpi.eastus.cloudapp.azure.com/iit"); ?>
+<?php header("Location: /iit"); ?>
