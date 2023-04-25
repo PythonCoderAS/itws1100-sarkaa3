@@ -1,21 +1,21 @@
 [submodule "labs/lab2"]
 	path = labs/lab2
-	url = git@github.com:RPI-ITWS/lab02-resume-PythonCoderAS
+	url = git@github.com:PythonCoderAS/lab02-resume-PythonCoderAS
 [submodule "labs/lab3"]
 	path = labs/lab3
-	url = git@github.com:RPI-ITWS/lab03-website-PythonCoderAS.git
+	url = git@github.com:PythonCoderAS/lab03-website-PythonCoderAS.git
 [submodule "labs/lab4"]
 	path = labs/lab4
-	url = git@github.com:RPI-ITWS/lab04-xmlandrss-PythonCoderAS.git
+	url = git@github.com:PythonCoderAS/lab04-xmlandrss-PythonCoderAS.git
 [submodule "labs/lab5"]
 	path = labs/lab5
-	url = git@github.com:RPI-ITWS/lab05-javascript-PythonCoderAS.git
+	url = git@github.com:PythonCoderAS/lab05-javascript-PythonCoderAS.git
 [submodule "labs/lab6"]
 	path = labs/lab6
-	url = git@github.com:RPI-ITWS/lab06-jquery-PythonCoderAS.git
+	url = git@github.com:PythonCoderAS/lab06-jquery-PythonCoderAS.git
 [submodule "labs/lab6b"]
 	path = labs/lab6b
-	url = git@github.com:RPI-ITWS/lab06b-jquery-xml-PythonCoderAS.git
+	url = git@github.com:PythonCoderAS/lab06b-jquery-xml-PythonCoderAS.git
 [submodule "project"]
 	path = project
-	url = git@github.com:RPI-ITWS/ITWS1100S23Team06.git
+	url = git@github.com:PythonCoderAS/ITWS1100S23Team06.git
